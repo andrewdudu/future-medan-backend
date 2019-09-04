@@ -69,6 +69,46 @@
 }
 ```
 
+## Get Bestseller Products
+
++ Endpoint : ``/products/best-seller``
++ HTTP Method : `GET`
++ Request Header : 
+	+ Accept: `application/json`
++ Response Body (Success) : 
+
+```json
+{
+    "code": 200,
+    "status": "OK",
+    "data": [{
+        "id": 1,
+        "name": "Book 1",
+        "sku": "1AB-H4M",
+        "description": "Example Description",
+        "price": 13000,
+        "image": "google.com/image",
+        "author": 1
+    }, {
+        "id": 2,
+        "name": "Book 2",
+        "sku": "1AC-H4M",
+        "description": "Example Description",
+        "price": 55000,
+        "image": "google.com/image",
+        "author": 1
+    }, {
+        "id": 3,
+        "name": "Book 3",
+        "sku": "1AD-H4M",
+        "description": "Example Description",
+        "price": 105000,
+        "image": "google.com/image",
+        "author": 1
+    }]
+}
+```
+
 ## Add New Product (Admin or Merchant)
 
 + Endpoint : ``/products``
